@@ -14,7 +14,6 @@ function loadComponent(componentPath, placeholderId) {
     });
 }
 
-// Carrega o Header e o Footer
 document.addEventListener('DOMContentLoaded', () => {
   loadComponent('nav.html', 'navbar-placeholder');
   loadComponent('footer.html', 'footer-placeholder');
