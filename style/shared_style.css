@@ -5,6 +5,7 @@ nav {
   justify-content: space-between;
   margin-left: 30px;
   margin-right: 30px;
+  background-color: transparent;
 }
 
 .navImage{
@@ -18,7 +19,7 @@ nav {
 }
 
 .homeLogo {
-  height: 50px;
+  height: 40px;
   transition: transform 0.3s;
 }
 
@@ -58,5 +59,9 @@ footer {
   padding: 20px;
   color: white;
   text-align: center;
+}
+
+footer p {
+  background-color: transparent;
 }
 
