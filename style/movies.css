@@ -1,0 +1,159 @@
+* {
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+   background-color: #FEF9FD;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  }
+  
+.slider {
+  width: 100vw;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: carrousel 120s infinite;
+  animation-delay: 2s;
+}
+
+.slider .slides img {
+  width: 100vw;
+  height: 600px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+.slider .slides::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+
+.slide {
+  position: relative;
+  flex: 0 0 100vw;
+}
+
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 600px;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.text h2 {
+  margin: 0;
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  background-color: transparent;
+}
+
+.text p {
+  margin: 15px 0;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.text a{
+  background-color: transparent;
+}
+
+
+.text a button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #95A5B4;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+}
+
+.text button:hover {
+  background-color: #95A5B4;;
+}
+
+@keyframes carrousel {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-100vw);
+  }
+  66.66% {
+    transform: translateX(-200vw);
+  }
+  100% {
+    transform: translateX(0); /* Retorna à primeira imagem */
+  }
+}
+
+section h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  color: #95A5B4;
+}
+
+.moviesCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.moviesCards div {
+  text-align: center;
+  max-width: 200px;
+  padding: 10px;
+}
+
+.moviesCards div:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: transparent;
+}
+
+.moviesCards img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.moviesCards a {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color:  #95A5B4;;
+  text-decoration: none;
+}
+
+.moviesCards a:hover {
+  color: #379AAF;
+}
