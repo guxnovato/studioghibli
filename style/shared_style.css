@@ -1,17 +1,28 @@
 nav {
-  background: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 30px;
-  margin-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: transparent;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
 }
+
+nav.scrolled {
+  background-color: #03141A;
+  opacity: 50%;
+}
+
 
 .navImage{
   text-decoration: none;
   transition: 0.3s;
   position: relative;
+  background-color: transparent;
 }
 
 .navImag:hover {
@@ -21,6 +32,7 @@ nav {
 .homeLogo {
   height: 40px;
   transition: transform 0.3s;
+  background-color: transparent;
 }
 
 .homeLogo:hover {
@@ -29,29 +41,32 @@ nav {
 
 nav ul {
   list-style: none;
-  padding: 0;
+  padding-right: 30px;
   margin: 0;
   display: flex;
+  background-color: transparent;
 }
 
 nav li:hover {
   opacity: 0.7;
   transform: scale(1.1);
-
 }
 
 nav li {
   margin: 0;
   transition: transform 0.3s;
+  background-color: transparent;
 }
 
 nav a {
   text-decoration: none;
-  color: #95A5B4;
+  font-size: 24px;
+  color: #FFFFFF;
   padding: 14px 20px;
   display: block;
   transition: background 0.3s;
   background: transparent;
+  background-color: transparent;
 }
 
 footer {

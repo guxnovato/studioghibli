@@ -14,6 +14,16 @@ function loadComponent(componentPath, placeholderId) {
     });
 }
 
+window.addEventListener('scroll', function() {
+  const nav = document.querySelector('nav');
+  if (window.scrollY > 50) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   loadComponent('nav.html', 'navbar-placeholder');
   loadComponent('footer.html', 'footer-placeholder');
