@@ -1,7 +1,7 @@
 * {
-   margin: 0;
-   font-family: 'Poppins', sans-serif;
-   background-color: #FEF9FD;
+  margin: 0;
+  font-family: 'Oswald';
+  background-color: #FEF9FD;
 }
 
 main {
@@ -9,11 +9,11 @@ main {
   padding: 0;
   display: flex;
   justify-content: center;
-  }
+}
   
 .slider {
   width: 100vw;
-  height: 600px;
+  height: 790px;
   overflow: hidden;
   position: relative;
 }
@@ -27,7 +27,7 @@ main {
 
 .slider .slides img {
   width: 100vw;
-  height: 600px;
+  height: 790px;
   object-fit: cover;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
 }
@@ -39,7 +39,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -52,27 +52,27 @@ main {
 .text {
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: 40px;
   color: white;
   padding: 20px;
   border-radius: 5px;
-  text-align: center;
+  text-align: left;
   max-width: 600px;
   z-index: 2;
   background-color: transparent;
 }
 
-.text h2 {
+.text h1 {
   margin: 0;
-  font-size: 36px;
-  font-family: 'Playfair Display', serif;
+  font-size: 48px;
   background-color: transparent;
 }
 
 .text p {
   margin: 15px 0;
-  font-size: 20px;
+  font-size: 16px;
   background-color: transparent;
+  margin-bottom: 40px;
 }
 
 .text a{
@@ -81,10 +81,9 @@ main {
 
 
 .text a button {
-  padding: 15px 30px;
-  font-size: 18px;
+  padding: 10px 20px;
+  font-size: 16px;
   background-color: #95A5B4;
-  border-radius: 100px;
   border: none;
   color: white;
   cursor: pointer;
@@ -111,39 +110,31 @@ main {
   }
 }
 
-section h2 {
-  text-align: center;
-  padding: 20px;
-  font-size: 36px;
-  font-family: 'Playfair Display', serif;
-  color: #95A5B4;
-}
 
-.moviesCards {
+#movies .moviesCards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   gap: 20px;
-  padding: 15px;
+  padding: 40px;
 }
 
-.moviesCards div {
+#movies .moviesCards div {
   text-align: center;
-  max-width: 200px;
+  max-width: 190px;
   padding: 10px;
 }
 
-.moviesCards div:hover {
+#movies .moviesCards div:hover {
   transition: 0.3s;
   cursor: pointer;
   transform: scale(1.2);
   background-color: transparent;
 }
 
-.moviesCards img {
+#movies .moviesCards img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 
 .moviesCards a {
