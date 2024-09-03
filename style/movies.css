@@ -39,7 +39,8 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom left, rgba(255,0,0,0), black);
+  opacity: 90%;
   z-index: 1;
 }
 
@@ -54,7 +55,6 @@ main {
   bottom: 20px;
   left: 40px;
   color: white;
-  padding: 20px;
   border-radius: 5px;
   text-align: left;
   max-width: 600px;

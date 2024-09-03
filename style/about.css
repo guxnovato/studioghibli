@@ -33,7 +33,8 @@ main .banner .imgBanner::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom left, rgba(255,0,0,0), black);
+  opacity: 90%;
 }
 
 main .text {
