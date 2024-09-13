@@ -7,95 +7,159 @@
   <link rel="icon" href="img/logo.png">
   <link rel="stylesheet" href="style/shared_style.css">
   <link rel="stylesheet" href="style/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
-    <div id="navbar-placeholder"></div>
-    <figure> <!-- Banners em carrossel-->
-     <h1> A Viagem de Chihiro </h1>
-    <br>
-    <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis architecto, ipsum aliquam, quam ut eius sapiente inventore quas eos debitis assumenda excepturi corporis, ex minus consequuntur sequi amet reiciendis. Dolores.
-    </p>
-    <br>
-    <a href="spiritedaway.html"> Acessar </a>
+    <div class="banner">
+      <div class="imgBanner">
+        <img src="img/index/Capa-Home.jpg" alt="ABABSLASS" />
+      </div>
+    </div>
   </main>
-  <br>
-  <section class="sectionDefault"> <!-- Sobre nós-->
-    <img class="section__image"> <!-- Imagem sobre o estúdio-->
-    <h1> Sobre nós</h1>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum odit nam adipisci iste provident. Neque, laudantium hic! Libero, corrupti in consequatur distinctio adipisci error harum minima iste! Officia, obcaecati sapiente!
-    </p>
+  <section class="sectionAbout"> <!-- Sobre nós-->
+      <img class="imgAbout" src="./img/index/Sobre-Nos.jpg">
+      <div class="aboutInfBut">
+        <div class="aboutInf">
+          <h1> Sobre nós</h1>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      <a href="about.html">
+        <button class="button">Ver mais</button>
+      </a>
+      </div>
     <br>
-    <a href="about.html"> Ver mais </a>
   </section>
-  <br>
-  <section> <!-- Filmografia -->
-    <div>
-    <h1> Conheca alguns filmes </h1>
-    <a href="movies.html"> Ver todos </a>
+  <div class="diviser"></div>
+  <section class="sectionMovie"> <!-- Filmografia -->
+    <div class="divTitbut">
+      <h1> Últimos lançamentos </h1>
+      <a href="movies.html"> 
+        <button class="button">Ver todos</button>
+      </a>
     </div>
-    <div class="list__default">
-      <div class="movieComponent">
-        <img class="movieCover" src="./img/movies/A-Viagem-de-Chihiro.jpg"> <!--capa do filme-->
-        <h4> A Viagem de Chihiro </h4>
-        <p> Ano de lançamento </p>
+    <div class="moviesLine">
+      <div class="movieCard">
+        <img class="movieImg" src="./img/movies/A-Viagem-de-Chihiro.jpg"> <!--capa do filme-->
+        <div class="movieInfo">
+          <h6> A Viagem de Chihiro </h4>
+          <p> 2000 </p>
+        </div>
       </div>
-      <div class="movieComponent">
-        <img class="movieCover" src="./img/movies/Meu-Amigo-Totoro.jpg"> <!--capa do filme-->
-        <h4> Meu Amigo Totoro </h4>
-        <p> Ano de lançamento </p>
+      <div class="movieCard">
+        <img class="movieImg" src="./img/movies/A-Viagem-de-Chihiro.jpg"> <!--capa do filme-->
+        <div class="movieInfo">
+          <h6> A Viagem de Chihiro </h4>
+          <p> 2000 </p>
+        </div>
       </div>
-      <div class="movieComponent">
-        <img class="movieCover" src="./img/movies/O-Castelo-Animado.jpg"> <!--capa do filme-->
-        <h4> O Castelo Animado </h4>
-        <p> Ano de lançamento </p>
+      <div class="movieCard">
+        <img class="movieImg" src="./img/movies/A-Viagem-de-Chihiro.jpg"> <!--capa do filme-->
+        <div class="movieInfo">
+          <h6> A Viagem de Chihiro </h4>
+          <p> 2000 </p>
+        </div>
       </div>
-      <div class="movieComponent">
-        <img class="movieCover" src="./img/movies/O-Mundo-dos-Pequeninos.jpg"> <!--capa do filme-->
-        <h4> O Mundo dos Pequeninos </h4>
-        <p> Ano de lançamento </p>
+      <div class="movieCard">
+        <img class="movieImg" src="./img/movies/A-Viagem-de-Chihiro.jpg"> <!--capa do filme-->
+        <div class="movieInfo">
+          <h6> A Viagem de Chihiro </h4>
+          <p> 2000 </p>
+        </div>
       </div>
+      <div class="movieCard">
+        <img class="movieImg" src="./img/movies/A-Viagem-de-Chihiro.jpg"> <!--capa do filme-->
+        <div class="movieInfo">
+          <h6> A Viagem de Chihiro </h4>
+          <p> 2000 </p>
+        </div>
+      </div>
+      <div class="movieCard">
+        <img class="movieImg" src="./img/movies/A-Viagem-de-Chihiro.jpg"> <!--capa do filme-->
+        <div class="movieInfo">
+          <h6> A Viagem de Chihiro </h4>
+          <p> 2000 </p>
+        </div>
+      </div>
+    </div>
+
     </div>
   </section>
-  <br>
-  <section class="sectionDefault"> <!-- Loja -->
-    <img class="sectionImage"> <!-- Imagem sobre algum produto -->
-    <h1> Compre agora </h1>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum odit nam adipisci iste provident. Neque, laudantium hic! Libero, corrupti in consequatur distinctio adipisci error harum minima iste! Officia, obcaecati sapiente!
-    </p>
-    <br>
-    <a href="link"> Ver mais </a>
-  </section>
-  <br>
-  <section> <!-- Trilha sonora -->
-    <div>
-    <h1> Mais ouvidas </h1>
-    <a href="link"> Ver todas </a>
+  <div class="diviser"></div>
+  <section class="sectionShop"> <!-- Loja-->
+    <div class="shopInfBut">
+      <div class="shopInf">
+        <h1> Descontos imperdíveis!</h1>
+        <p> Descubra produtos incríveis na nossa loja. Clique aqui e encontre exatamente o que você procura!
+        </p>
+      </div>
+      <a href="about.html">
+        <button class="button"> Acessar loja</button>
+      </a>
     </div>
-    <div class="listDefault">
-      <div class="musicComponent">
-        <img class="musicCover">
-        <h4> Título da faixa </h4>
-        <p> Artista </p>
+    <img class="imgShop" src="./img/index/img-loja.png">
+</section>
+<div class="diviser"></div>
+<section class="sectionMusic"> <!-- Trilha -->
+  <div class="divTitbut">
+    <h1> As mais ouvidas </h1>
+    <a href="playlist.html"> 
+      <button class="button"> Ver mais</button>
+    </a>
+  </div>
+    <div class="musicsLine">
+      <div class="musicCard">
+        <img class="musicImg" src="./img/index/music-cover.png"> <!--capa do filme-->
+        <div class="musicInfo">
+        <h6> Nome da música </h4>
+        <p> artista </p>
       </div>
-      <div class="musicComponent">
-        <img class="musicCover"> 
-        <h4> Título da faixa </h4>
-        <p> Artista </p>
       </div>
-      <div class="musicComponent">
-        <img class="musicCover"> 
-        <h4> Título da faixa </h4>
-        <p> Artista </p>
+      <div class="musicCard">
+        <img class="musicImg" src="./img/index/music-cover.png"> <!--capa do filme-->
+        <div class="musicInfo">
+        <h6> Nome da música </h4>
+        <p> artista </p>
       </div>
-      <div class="musicComponent">
-        <img class="musicCover"> 
-        <h4> Título da faixa </h4>
-        <p> Artista </p>
+      </div>
+      <div class="musicCard">
+        <img class="musicImg" src="./img/index/music-cover.png"> <!--capa do filme-->
+        <div class="musicInfo">
+        <h6> Nome da música </h4>
+        <p> artista </p>
+      </div>
+      </div>
+      <div class="musicCard">
+        <img class="musicImg" src="./img/index/music-cover.png"> <!--capa do filme-->
+        <div class="musicInfo">
+        <h6> Nome da música </h4>
+        <p> artista </p>
+      </div>
+      </div>
+      <div class="musicCard">
+        <img class="musicImg" src="./img/index/music-cover.png"> <!--capa do filme-->
+        <div class="musicInfo">
+        <h6> Nome da música </h4>
+        <p> artista </p>
+      </div>
+      </div>
+      <div class="musicCard">
+        <img class="musicImg" src="./img/index/music-cover.png"> <!--capa do filme-->
+        <div class="musicInfo">
+        <h6> Nome da música </h4>
+        <p> artista </p>
+      </div>
       </div>
     </div>
-  </section> 
+
+  </div>
+</section>
   <div id="footer-placeholder"></div>
   <script src="script/load_component.js"></script>
 </body>
