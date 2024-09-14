@@ -9,14 +9,16 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; 
+  width: 100vw;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
 }
 
 nav.scrolled {
   background-color: #03141A;
   opacity: 50%;
+  width: 100vw;
 }
-
 
 .navImage{
   text-decoration: none;
@@ -41,10 +43,11 @@ nav.scrolled {
 
 nav ul {
   list-style: none;
-  padding-right: 30px;
+  padding-right: 50px;
   margin: 0;
   display: flex;
   background-color: transparent;
+  
 }
 
 nav li:hover {
@@ -61,7 +64,7 @@ nav li {
 nav a {
   text-decoration: none;
   font-size: 18px;
-  color: #FBFDFE;
+  color: white;
   padding: 14px 20px;
   display: block;
   transition: background 0.3s;

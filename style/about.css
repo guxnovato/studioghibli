@@ -34,14 +34,13 @@ main .banner .imgBanner::after {
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom left, rgba(255,0,0,0), black);
-  opacity: 90%;
+  opacity: 100%;
 }
 
 main .text {
   position: absolute;
   bottom: 20px;
   left: 40px;
-  color: white;
   text-align: left;
   max-width: 600px;
   z-index: 2;
@@ -49,15 +48,22 @@ main .text {
 }
 
 main .text h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
   margin: 0;
   font-size: 48px;
+  color: white;
   background-color: transparent;
 }
 
 main .text p {
   margin: 15px 0;
-  font-size: 16px;
+  font-size: 18px;
   background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: #FBFDFE;
+  opacity: 80%;
+  line-height: 1.5;
 }
 
 main .text a{
@@ -67,40 +73,51 @@ main .text a{
 hr {
   margin-bottom: 40px;
   opacity: 50%;
+  width: 95vw;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+section {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .container {
+  width: 100vw;
   margin-top: 60px;
   margin-bottom: 60px;
-  margin-left: 40px;
-  margin-right: 40px;
   display: block;
 }
 
 .container #origin {
   display: flex;
-  align-items: stretch;
-  gap: 40px;
-  margin: 20px 0; 
-  padding-bottom: 30px;
+  align-content: space-between;
+  gap: 2%;
+  margin-bottom: 60px;
+}
+
+.container #origin .imgBox {
+  width: 50vw;
 }
 
 .container #origin .imgBox img {
-  text-decoration: none;
-  position: relative;
-  width: 661px;
-  height: 480px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .container #origin .resumeText {
-  width: 661px;
+  width: 50vw;
 }
 
 .container #origin .resumeText h2{
-  width: 661px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
   top: 0;
   margin-bottom: 30px;
+  color: black;
+  opacity: 80%;
   font-size: 40px;
 }
 
@@ -109,54 +126,80 @@ hr {
   margin-bottom: 20px;
   color: #03141A;
   opacity: 50%;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3; 
 }
 
 .container #founders {
   display: block;
+  width: 100vw;
+  max-height: 55vh;
+  margin-bottom: 60px;
 }
 
 .container #founders h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: black;
+  opacity: 80%;
   font-size: 40px;
   margin-bottom: 40px;
 }
 
 .container #founders .box {
   display: flex;
-  align-items: stretch;
-  gap: 20px;
-  margin: 20px 0; 
+  align-content: space-between;
+  gap: 1%;
 }
 
 .container #founders .box .foundersBox {
   display: flex;
   align-items: stretch;
-  gap: 40px;
-  padding-bottom: 30px;
-  width: 661px;
+  gap: 3%;
+  width: 47vw;
+}
+
+.container #founders .box .foundersBox .foundersImgBox {
+  width: 50vw;
+  height: 70vh;
 }
 
 .container #founders .box .foundersBox .foundersImgBox img {
-  width: 310px;
-  height: 310px;
+  width: 100%;
+  height: 60%;
   object-fit: cover;
 }
 
-.container #founders .box .foundersBox .founderText h3{
-  font-size: 32px;
-  margin-bottom: 30px;
+.container #founders .box .foundersBox .foundersText {
+  width: 50vw;
 }
 
-.container #founders .box .foundersBox .founderText p{
+.container #founders .box .foundersBox .foundersText h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: black;
+  opacity: 80%;
+}
+
+.container #founders .box .foundersBox .foundersText p{
   font-size: 16px;
   color: #03141A;
   opacity: 50%;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.3;
+  margin-right: 10px;
 }
 
 .container #curiosities h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
   width: 661px;
   top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 40px;
+  color: black;
+  opacity: 80%;
 }
 
 .container #curiosities .itens {
@@ -164,16 +207,29 @@ hr {
 }
 
 .container #curiosities .itens .item h5 {
-  color: #03141A;
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; 
+  color: black;
+  opacity: 80%;
+  font-size: 20px;
   opacity: 70%;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 .container #curiosities .itens .item p {
-  color: #03141A;
+  color: black;
+  opacity: 80%;
   opacity: 50%;
-  font-size: 16px;
-  padding-left: 10px;
+  font-size: 18px;
   padding-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  width: 95vw;
+}
+
+.container #curiosities .itens hr {
+  margin-bottom: 20px;
+  opacity: 50%;
+  width: 95vw;
+  margin-left: 0;
 }

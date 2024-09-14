@@ -40,7 +40,7 @@ main {
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom left, rgba(255,0,0,0), black);
-  opacity: 90%;
+  opacity: 100%;
   z-index: 1;
 }
 
@@ -70,15 +70,18 @@ main {
 
 .text p {
   margin: 15px 0;
-  font-size: 16px;
+  font-size: 18px;
   background-color: transparent;
   margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  opacity: 50%;
+  line-height: 1.3;
 }
 
 .text a{
   background-color: transparent;
 }
-
 
 .text a button {
   padding: 10px 20px;
@@ -89,6 +92,7 @@ main {
   cursor: pointer;
   z-index: 3;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .text button:hover {
@@ -140,10 +144,23 @@ main {
 .moviesCards a {
   display: block;
   margin-top: 10px;
-  font-size: 16px;
-  color:  #95A5B4;;
+  font-size: 18px;
+  color:  black;
+  font-family: 'Roboto', sans-serif;
+  opacity: 80%;
   text-decoration: none;
+  font-weight: bold;
 }
+
+.moviesCards p {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+  color:  black;
+  font-family: 'Roboto', sans-serif;
+  opacity: 50%;
+}
+
 
 .moviesCards a:hover {
   color: #379AAF;
