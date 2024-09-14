@@ -1,0 +1,294 @@
+/* classes gerais */
+
+* ⁠{
+  margin: 0;
+  background-color: #FEF9FD;
+}
+
+h1 {
+    margin: 0%;
+    text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 40px;
+  color: #03141a;
+  opacity: 80%
+}
+
+h2 {
+    margin: 0%;
+    text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 32px;
+  color: #03141a;
+  opacity: 80%
+}
+
+h3 {
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #03141a;
+    opacity: 80%;
+    margin: 0;
+}
+ 
+h4 {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #03141a;
+    opacity: 80%;
+    margin: 0;
+}
+
+h5 {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #03141a;
+    opacity: 80%;
+    margin: 0;
+}
+
+h6 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #03141a;
+    opacity: 80%;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 50%;
+    color: #03141a;
+    margin: 0;
+    text-align: justify;
+}
+
+button {
+    appearance: none;
+    border-style: none;
+    opacity: 80%;
+    background-color: #03141a;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #FEF9FD;
+    opacity: 80%;
+    margin: 0;
+    border-radius: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+button:hover{
+    background-color: #03141a;
+    opacity: 100%;
+}
+
+button:focus{
+    background-color: #03141a;
+    opacity: 100%;
+}
+
+
+body { 
+    margin: 0%;
+}
+
+section {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 80px;
+}
+
+.diviser {
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 2px;
+    background-color: #03141a;
+    opacity: 20%;
+    border-radius: 5px;
+}
+
+/* Banner inicial */
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  border: 0;
+}
+
+main .banner {
+  width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+main .banner .imgBanner img {
+  width: 100vw;
+  height: 100vh; 
+}
+
+/* Sobre nós */
+
+.sectionAbout { 
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.imgAbout {
+    width: 50%;
+}
+
+.aboutInfBut {
+display: flex;
+flex-direction: column;
+align-items: end;
+padding:0;
+margin-left: 3%;
+}
+
+.aboutInfBut a {
+    margin-top: auto;
+}
+
+.aboutInf {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Filmes*/
+
+.sectionMovie {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.divTitbut{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.moviesLine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.movieCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.movieImg {
+    width: 196px;
+
+}
+
+.movieInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Loja*/
+
+.sectionShop {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.imgShop {
+    width: 50%;
+}
+
+.shopInfBut {
+display: flex;
+flex-direction: column;
+align-items: start;
+padding:0;
+margin-right: 3%;
+}
+
+.shopInfBut a {
+    margin-top: auto;
+}
+
+.shopInf {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* Trilha*/
+
+.sectionMusic {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 160px;
+}
+
+.musicTitbut{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.musicsLine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.musicCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.musicImg {
+    width: 196px;
+}
+
+.musicInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
