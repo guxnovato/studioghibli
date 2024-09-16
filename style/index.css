@@ -1,6 +1,6 @@
 /* classes gerais */
 
-* ⁠{
+* {
   margin: 0;
   background-color: #FEF9FD;
 }
@@ -10,7 +10,7 @@ h1 {
     text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
   font-size: 40px;
   color: #03141a;
@@ -213,6 +213,7 @@ margin-left: 3%;
 
 .movieImg {
     width: 196px;
+    height: 310px;
 
 }
 
