@@ -248,6 +248,7 @@ hr {
     align-items: center;
     margin-left: 15px;
     margin-right: 15px;
+    max-width: 100%;
     left: 0%;
   }
 
@@ -392,6 +393,7 @@ hr {
   
   .container #origin .resumeText {
     width: 100%;
+
   }
 
   .container #origin .resumeText h2 {
