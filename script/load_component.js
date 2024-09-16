@@ -14,15 +14,25 @@ function loadComponent(componentPath, placeholderId) {
     });
 }
 
+function toggleMenu() {
+  const navList = document.querySelector('.navList');
+  navList.classList.toggle('active');
+}
+
 window.addEventListener('scroll', function() {
   const nav = document.querySelector('nav');
+  const navList = document.querySelector('.navList');
+
   if (window.scrollY > 50) {
     nav.classList.add('scrolled');
+    
+    if (navList.classList.contains('active')) {
+      navList.classList.remove('active');
+    }
   } else {
     nav.classList.remove('scrolled');
   }
 });
-
 
 document.addEventListener('DOMContentLoaded', () => {
   loadComponent('nav.html', 'navbar-placeholder');

@@ -4,6 +4,10 @@
   background-color: #FEF9FD;
 }
 
+body {
+  margin: 0%;
+}
+
 main {
   margin: 0;
   padding: 0;
@@ -105,13 +109,6 @@ main .text p {
 
   main .text h1 {
     text-align: center;
-  }
-
-  hr {
-    margin-bottom: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: auto;
   }
 
   #cards {
