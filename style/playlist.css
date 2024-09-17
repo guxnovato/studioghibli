@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  font-family: 'Oswald';
+  background-color: #FEF9FD;
+}
+
+body {
+  margin: 0%;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+main .banner {
+  width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+main .banner .imgBanner img {
+  width: 100vw;
+  height: 100vh; 
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+main .banner .imgBanner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom left, rgba(255,0,0,0), black);
+  opacity: 100%;
+}
+
+main .text {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  z-index: 2;
+  background-color: transparent;
+}
+
+main .text h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
+  margin: 0;
+  font-size: 48px;
+  color: white;
+  background-color: transparent;
+}
+
+main .text p {
+  margin: 15px 0;
+  font-size: 18px;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: #FBFDFE;
+  opacity: 80%;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+#cards .iframe-container iframe {
+  width: 23vw;
+  height: 400px;
+}
+
+#cards .iframe-container h4 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+  opacity: 80%;
+}
+
+@media (max-width: 768px) {
+  main .text {
+    align-items: center;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 100%;
+    left: 0%;
+  }
+
+  main .text h1 {
+    text-align: center;
+  }
+
+  #cards {
+    flex-direction: column;
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  #cards .iframe-container iframe {
+    width: 100%;
+  }
+  
+  #cards .iframe-container h4 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+  #cards {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #cards .iframe-container iframe {
+    width: 100%;
+  }
+  
+  #cards .iframe-container h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
