@@ -193,20 +193,19 @@ hr {
 }
 
 .container #curiosities {
-  width: 100vw;
+  width: 95vw;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .container #curiosities h2 {
   font-family: 'Oswald', sans-serif;
-  font-weight: 700; 
-  width: 661px;
-  top: 0;
-  margin-bottom: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
-  font-size: 40px;
+  font-weight: 700;
   color: black;
   opacity: 80%;
+  font-size: 40px;
+  margin-bottom: 40px;
 }
 
 .container #curiosities .itens {
@@ -222,8 +221,6 @@ hr {
   font-size: 20px;
   opacity: 70%;
   padding-bottom: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .container #curiosities .itens .item p {
@@ -232,20 +229,10 @@ hr {
   opacity: 50%;
   font-size: 18px;
   padding-bottom: 15px;
-  margin-left: 40px;
-  margin-right: 40px;
+  padding-right: 10px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.3;
 }
-
-.container #curiosities .itens hr {
-  margin-bottom: 20px;
-  opacity: 50%;
-  width: 95vw;
-  margin-left: 0;
-}
-
-/* Responsividade */
 
 @media (max-width: 768px) {
 
@@ -348,9 +335,12 @@ hr {
   
   .container #curiosities {
     display: block;
+    align-items: center;
     margin-bottom: 20px;
     margin-left: 15px;
-    margin-right: 15px; 
+    margin-right: 15px;
+    max-height: 100%;
+    width: auto;
   }
 
   .container #curiosities h2 {
@@ -358,7 +348,6 @@ hr {
   }
   
   .container #curiosities .itens .item p {
-    width: 90vw;
     font-size: 16px;
   }
   
@@ -442,22 +431,9 @@ hr {
   
   .container #curiosities {
     display: block;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    margin-right: 15px; 
+    align-items: center;
+    margin-bottom: 40px;
+    width: auto;
   }
 
-  .container #curiosities h2 {
-    width: 100%;
-  }
-  
-  .container #curiosities .itens .item p {
-    width: 90vw;
-    font-size: 16px;
-  }
-  
-  .container #curiosities .itens {
-    width: 100%;
-    display: inline-block;
-  }
 }
