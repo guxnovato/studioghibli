@@ -109,7 +109,6 @@ button:focus{
     opacity: 100%;
 }
 
-
 body { 
     margin: 0%;
 }
@@ -117,7 +116,7 @@ body {
 section {
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .diviser {
@@ -156,7 +155,8 @@ main .banner .imgBanner img {
 /* Sobre nós */
 
 .sectionAbout { 
-    padding-top: 80px;
+    padding-top: 0px;
+    max-height: 55vh;
     display: flex;
     flex-direction: row;
     align-content: space-between;

@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  font-family: 'Oswald';
+}
+  
+body {
+  margin: 0%;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+main .banner {
+  width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+main .banner .imgBanner img {
+  width: 100vw;
+  height: 100vh; 
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+main .banner .text {
+  position: absolute;
+  bottom: 100px;
+  left: 40px;
+  text-align: left;
+  max-width: 600px;
+  z-index: 2;
+  background-color: transparent;
+}
+
+main .banner .text h1 {
+  font-weight: 700; 
+  margin: 0;
+  font-size: 80px;
+  color: white;
+  background-color: transparent;
+}
+
+main .banner .text p {
+  font-size: 18px;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: #FBFDFE;
+  opacity: 80%;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 2rem;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.products .row {
+  position: relative;
+  transition: all .40s;
+}
+
+.products .row img {
+  width: 100%;
+  height: auto;
+  transition: all .40s;
+}
+
+.products .row img:hover {
+  transform: scale(0.9);
+}
+
+.products .row .productText h5 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #27b737;
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+
+.products .row .heartIcon {
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+}
+
+.products .row .heartIcon:hover {
+  color: red;
+}
+
+.products .row .ratting i{
+  color: #FF8C00;
+  font-size: 18px;
+}
+
+.products .row .price h4 {
+  color: #03141A;
+  opacity: 80%;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.products .row .price p {
+  color: #03141A;
+  opacity: 90%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) { 
+  main .banner .text {
+    position: absolute;
+    bottom: 300px;
+    left: 20px;
+    right: 20px;
+    text-align: left;
+    max-width: 300px;
+    z-index: 2;
+    background-color: transparent;
+  }
+  
+  main .banner .text h1 {
+    font-size: 48px;
+  }
+
+  .products {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+}
+

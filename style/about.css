@@ -42,7 +42,7 @@ main .banner .imgBanner::after {
   opacity: 100%;
 }
 
-main .text {
+main .banner .text {
   position: absolute;
   bottom: 20px;
   left: 40px;
@@ -52,7 +52,7 @@ main .text {
   background-color: transparent;
 }
 
-main .text h1 {
+main .banner .text h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700; 
   margin: 0;
@@ -61,7 +61,7 @@ main .text h1 {
   background-color: transparent;
 }
 
-main .text p {
+main .banner .text p {
   margin: 15px 0;
   font-size: 18px;
   background-color: transparent;
@@ -237,7 +237,7 @@ hr {
 
 @media (max-width: 768px) {
 
-  main .text {
+  main .banner .text {
     align-items: center;
     margin-left: 15px;
     margin-right: 15px;
@@ -245,11 +245,11 @@ hr {
     left: 0%;
   }
 
-  main .text h1 {
+  main .banner .text h1 {
     text-align: center;
   }
   
-  main .text p {
+  main .banner .text p {
     text-align: justify;
   }
 
