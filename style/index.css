@@ -81,33 +81,38 @@ p {
 }
 
 button {
-    appearance: none;
-    border-style: none;
-    opacity: 80%;
-    background-color: #03141a;
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #FEF9FD;
-    opacity: 80%;
-    margin: 0;
-    border-radius: 4px;
+    font-style: bold;
+    background-color: rgb(3, 20, 26, 0.8);
+    border-radius: 100px;
+    border: none;
+    color: white;
+    cursor: pointer;
     padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-right: 18px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
 }
 
-button:hover{
-    background-color: #03141a;
-    opacity: 100%;
+button i {
+    padding-left: 10px;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
 }
-
-button:focus{
-    background-color: #03141a;
-    opacity: 100%;
-}
+  
+  button:hover{
+      background-color: #03141a;
+      opacity: 100%;
+  }
+  
+  button:focus{
+      background-color: #03141a;
+      opacity: 100%;
+  }
 
 body { 
     margin: 0%;
@@ -119,15 +124,14 @@ section {
     margin-top: 60px;
 }
 
-.diviser {
+hr {
     margin-top: 80px;
+    opacity: 50%;
+    width: auto;
     margin-left: 40px;
     margin-right: 40px;
-    height: 2px;
-    background-color: #03141a;
-    opacity: 20%;
-    border-radius: 5px;
 }
+
 
 /* Banner inicial */
 
@@ -213,8 +217,6 @@ margin-left: 3%;
 
 .movieImg {
     width: 196px;
-    height: 310px;
-
 }
 
 .movieInfo {
@@ -222,6 +224,14 @@ margin-left: 3%;
     flex-direction: column;
     align-items: center;
     gap: 5px;
+}
+
+.movieCard:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: transparent;
+    z-index: 2;
 }
 
 /* Loja*/
@@ -281,6 +291,14 @@ margin-right: 3%;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+.musicCard:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: transparent;
+    z-index: 2;
 }
 
 .musicImg {

@@ -1,8 +1,10 @@
 * {
   margin: 0;
   font-family: 'Oswald';
-  background-color: #FEF9FD;
+  background-color: #03141A;
 }
+
+/* Nav */
 
 .navBar{
   display: flex;
@@ -134,14 +136,15 @@
   }
 }
 
-footer {
-  background-color: #95A5B4;
-  padding: 20px;
-  color: white;
-  text-align: center;
+/* Footer */
+
+.footerG {
+  background-color: #03141A;
+  margin: 40px;
 }
 
-footer p {
-  background-color: transparent;
-}
+.div1 {
+  display: flex;
+  align-items: end;
 
+}

@@ -4,7 +4,8 @@
   }
   
   h1 {
-      margin: 0%;
+    background-color: 0;  
+    margin: 0%;
       text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -78,24 +79,29 @@
       text-align: justify;
   }
   
-  button {
-      appearance: none;
-      border-style: none;
-      opacity: 80%;
-      background-color: #03141a;
-      font-size: 16px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 500;
-      font-style: normal;
-      color: #FEF9FD;
-      opacity: 80%;
-      margin: 0;
-      border-radius: 4px;
-      padding-left: 24px;
-      padding-right: 24px;
-      padding-top: 12px;
-      padding-bottom: 12px;
-  }
+button {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-style: bold;
+    background-color: rgb(3, 20, 26, 0.8);
+    border-radius: 100px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding-left: 24px;
+    padding-right: 18px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button i {
+    padding-left: 10px;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+}
   
   button:hover{
       background-color: #03141a;
@@ -107,7 +113,6 @@
       opacity: 100%;
   }
   
-  
   body { 
       margin: 0%;
   }
@@ -118,16 +123,13 @@
       margin-top: 80px;
   }
   
-  .diviser {
-      margin-top: 80px;
-      margin-left: 40px;
-      margin-right: 40px;
-      height: 2px;
-      background-color: #03141a;
-      opacity: 20%;
-      border-radius: 5px;
-
-  }
+  hr {
+    margin-top: 80px;
+    opacity: 50%;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
 /* Banner inicial */
 
@@ -150,6 +152,18 @@ main {
   main .banner .imgBanner img {
     width: 100vw;
     height: 100vh; 
+  }
+
+  .bannerText {
+    color: #FEF9FD;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    text-align: center;
+    left: 40px;
+    text-align: left;
+    z-index: 2;
+    background-color: transparent;
   }
   
 /* Sinopse */
@@ -179,6 +193,7 @@ gap: 40px;
     gap: 30px;
 }
 
+
 /* Dados Técnicos */
 
 .sectionDados {
@@ -188,6 +203,11 @@ gap: 40px;
     margin-bottom: 160px;
 }
 
+.dadosTitBut {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
 .dadosLine {
     display: flex;
