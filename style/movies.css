@@ -1,7 +1,11 @@
 * {
-   margin: 0;
-   font-family: 'Poppins', sans-serif;
-   background-color: #FEF9FD;
+  margin: 0;
+  font-family: 'Oswald';
+  background-color: #FEF9FD;
+}
+
+body {
+  margin: 0%;
 }
 
 main {
@@ -9,90 +13,105 @@ main {
   padding: 0;
   display: flex;
   justify-content: center;
-  }
+}
   
-.slider {
+main .slider {
   width: 100vw;
-  height: 600px;
+  height: 100vh; 
   overflow: hidden;
   position: relative;
 }
 
-.slides {
+main .slides {
   display: flex;
   width: 300%;
   animation: carrousel 120s infinite;
   animation-delay: 2s;
 }
 
-.slider .slides img {
+main .slider .slides img {
   width: 100vw;
-  height: 600px;
+  height: 100vh;
   object-fit: cover;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
 }
 
-.slider .slides::after {
+main .slider .slides::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to bottom left, rgba(255,0,0,0), black);
+  opacity: 100%;
   z-index: 1;
 }
 
-
-.slide {
+main .slide {
   position: relative;
   flex: 0 0 100vw;
 }
 
-.text {
+main .slider .slides .slide .text {
   position: absolute;
   bottom: 20px;
-  left: 20px;
-  color: white;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
+  left: 40px;
+  text-align: left;
   max-width: 600px;
   z-index: 2;
   background-color: transparent;
 }
 
-.text h2 {
+main .slider .slides .slide .text h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
   margin: 0;
-  font-size: 36px;
-  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: white;
   background-color: transparent;
 }
 
-.text p {
-  margin: 15px 0;
-  font-size: 20px;
-  background-color: transparent;
-}
-
-.text a{
-  background-color: transparent;
-}
-
-
-.text a button {
-  padding: 15px 30px;
+main .slider .slides .slide .text p {
+  margin: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 30px;
   font-size: 18px;
-  background-color: #95A5B4;
-  border-radius: 100px;
-  border: none;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: #FBFDFE;
+  opacity: 80%;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+main .slider .slides .slide .text a{
+  background-color: transparent;
+}
+
+main .slider .slides .slide .text a button {
+  font-size: 18px;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
   color: white;
   cursor: pointer;
   z-index: 3;
   position: relative;
+  margin-bottom: 20px;
+  width: 130px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
 }
 
-.text button:hover {
+main .slider .slides .slide .text a button i {
+  padding-left: 10px;
+  background-color: transparent;
+}
+
+main .slider .slides .slide .text button:hover {
   background-color: #95A5B4;;
 }
 
@@ -111,49 +130,90 @@ main {
   }
 }
 
-section h2 {
-  text-align: center;
-  padding: 20px;
-  font-size: 36px;
-  font-family: 'Playfair Display', serif;
-  color: #95A5B4;
-}
-
-.moviesCards {
+.container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.moviesCards div {
+.container .moviesCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+}
+
+.container:hover .moviesCards div {
+  opacity: .5;
+}
+
+.container .moviesCards div {
   text-align: center;
-  max-width: 200px;
-  padding: 10px;
+  max-width: 196px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
-.moviesCards div:hover {
+.container .moviesCards  div:hover {
   transition: 0.3s;
   cursor: pointer;
   transform: scale(1.2);
   background-color: transparent;
+  z-index: 2;
 }
 
-.moviesCards img {
+.container .moviesCards div:hover {
+  opacity: 1;
+}
+
+.container .moviesCards div img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 310px;
 }
 
-.moviesCards a {
+.container .moviesCards div a {
   display: block;
   margin-top: 10px;
-  font-size: 16px;
-  color:  #95A5B4;;
+  font-size: 18px;
+  color:  black;
+  font-family: 'Roboto', sans-serif;
+  opacity: 80%;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.moviesCards a:hover {
+.container .moviesCards div p {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+  color:  black;
+  font-family: 'Roboto', sans-serif;
+  opacity: 50%;
+}
+
+.container .moviesCards div a:hover {
   color: #379AAF;
+}
+
+@media (max-width: 768px) and (max-width: 1280px) {
+
+  main .slider .slides .slide .text {
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 100%;
+    left: 0%;
+  }
+
+  main .slider .slides .slide .text h1 {
+    text-align: center;
+  }
+
+  .container .moviesCards {
+    justify-content: center;
+  }
 }

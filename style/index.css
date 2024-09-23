@@ -82,12 +82,13 @@ p {
 
 button {
     font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-style: bold;
     background-color: rgb(3, 20, 26, 0.8);
     border-radius: 100px;
     border: none;
     color: white;
     cursor: pointer;
-
     padding-left: 24px;
     padding-right: 18px;
     height: 45px;
@@ -124,15 +125,14 @@ section {
     margin-top: 80px;
 }
 
-.diviser {
+hr {
     margin-top: 80px;
+    opacity: 50%;
+    width: auto;
     margin-left: 40px;
     margin-right: 40px;
-    height: 2px;
-    background-color: #03141a;
-    opacity: 20%;
-    border-radius: 5px;
 }
+
 
 /* Banner inicial */
 

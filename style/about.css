@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  font-family: 'Oswald';
+  background-color: #FEF9FD;
+}
+
+body {
+  margin: 0%;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+main .banner {
+  width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+main .banner .imgBanner img {
+  width: 100vw;
+  height: 100vh; 
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+main .banner .imgBanner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom left, rgba(255,0,0,0), black);
+  opacity: 100%;
+}
+
+main .text {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  text-align: left;
+  max-width: 600px;
+  z-index: 2;
+  background-color: transparent;
+}
+
+main .text h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
+  margin: 0;
+  font-size: 48px;
+  color: white;
+  background-color: transparent;
+}
+
+main .text p {
+  margin: 15px 0;
+  font-size: 18px;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: #FBFDFE;
+  opacity: 80%;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+hr {
+  margin-bottom: 40px;
+  opacity: 50%;
+  width: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.container {
+  width: 100vw;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: block;
+}
+
+.container #origin {
+  display: flex;
+  align-content: space-between;
+  gap: 2%;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.container #origin .imgBox {
+  width: 50vw;
+}
+
+.container #origin .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container #origin .resumeText {
+  width: 50vw;
+}
+
+.container #origin .resumeText h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
+  top: 0;
+  margin-bottom: 30px;
+  color: black;
+  opacity: 80%;
+  font-size: 40px;
+}
+
+.container #origin .resumeText p{
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #03141A;
+  opacity: 50%;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  text-align: justify; 
+}
+
+.container #founders {
+  display: block;
+  width: 95vw;
+  max-height: 55vh;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.container #founders h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: black;
+  opacity: 80%;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.container #founders .box {
+  display: flex;
+  align-content: space-between;
+  gap: 1%;
+}
+
+.container #founders .box .foundersBox {
+  display: flex;
+  align-items: stretch;
+  gap: 3%;
+  width: 47vw;
+}
+
+.container #founders .box .foundersBox .foundersImgBox {
+  width: 50vw;
+  height: 70vh;
+}
+
+.container #founders .box .foundersBox .foundersImgBox img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.container #founders .box .foundersBox .foundersText {
+  width: 50vw;
+}
+
+.container #founders .box .foundersBox .foundersText h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: black;
+  opacity: 80%;
+}
+
+.container #founders .box .foundersBox .foundersText p{
+  font-size: 16px;
+  color: #03141A;
+  opacity: 50%;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.3;
+  margin-right: 10px;
+}
+
+.container #curiosities {
+  width: 100vw;
+}
+
+.container #curiosities h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
+  width: 661px;
+  top: 0;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 40px;
+  color: black;
+  opacity: 80%;
+}
+
+.container #curiosities .itens {
+  display: inline-block;
+}
+
+.container #curiosities .itens .item h5 {
+  font-family: 'Roboto', sans-serif;
+  width: auto;
+  font-weight: 700; 
+  color: black;
+  opacity: 80%;
+  font-size: 20px;
+  opacity: 70%;
+  padding-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.container #curiosities .itens .item p {
+  color: black;
+  opacity: 80%;
+  opacity: 50%;
+  font-size: 18px;
+  padding-bottom: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+}
+
+.container #curiosities .itens hr {
+  margin-bottom: 20px;
+  opacity: 50%;
+  width: 95vw;
+  margin-left: 0;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+  main .text {
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 100%;
+    left: 0%;
+  }
+
+  main .text h1 {
+    text-align: center;
+  }
+  
+  main .text p {
+    text-align: justify;
+  }
+
+  hr {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+  }
+  
+  .container {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container #origin {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px; 
+  }
+  
+  .container #origin .imgBox {
+    width: 100%;
+  }
+  
+  .container #origin .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .container #origin .resumeText {
+    width: 100%;
+  }
+
+  .container #founders {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-height: 100%;
+    width: auto;
+  }
+  
+  .container #founders .box {
+    display: block;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .container #founders .box .foundersBox {
+    display: block;
+    width: 100%;
+  }
+  
+  .container #founders .box .foundersBox .foundersImgBox {
+    width: 100%;
+    align-items: center;
+    height: auto;
+  }
+
+  .container #founders .box .foundersBox .foundersImgBox img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .container #founders .box .foundersBox .foundersText {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container #curiosities {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px; 
+  }
+
+  .container #curiosities h2 {
+    width: 100%;
+  }
+  
+  .container #curiosities .itens .item p {
+    width: 90vw;
+    font-size: 16px;
+  }
+  
+  .container #curiosities .itens {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  p {
+    text-align: justify;
+  }
+  
+  .container {
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .container #origin {
+    display: block;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .container #origin .imgBox {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .container #origin .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .container #origin .resumeText {
+    width: 100%;
+
+  }
+
+  .container #origin .resumeText h2 {
+    margin-top: 20px;
+  }
+
+  .container #founders {
+    display: block;
+    align-items: center;
+    margin-bottom: 40px;
+    max-height: 100%;
+    width: auto;
+  }
+  
+  .container #founders .box {
+    display: block;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .container #founders .box .foundersBox {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .container #founders .box .foundersBox .foundersImgBox {
+    width: 100%;
+    height: 50%;
+  }
+
+  .container #founders .box .foundersBox .foundersImgBox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .container #founders .box .foundersBox .foundersText {
+    width: 100%;
+  }
+  
+  .container #curiosities {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px; 
+  }
+
+  .container #curiosities h2 {
+    width: 100%;
+  }
+  
+  .container #curiosities .itens .item p {
+    width: 90vw;
+    font-size: 16px;
+  }
+  
+  .container #curiosities .itens {
+    width: 100%;
+    display: inline-block;
+  }
+}
