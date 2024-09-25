@@ -6,15 +6,15 @@
 }
 
 h1 {
-    margin: 0%;
-    text-transform: uppercase;
+  text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
   font-size: 40px;
   color: #03141a;
-  opacity: 80%
+  opacity: 80%;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -92,6 +92,7 @@ button {
     padding-left: 24px;
     padding-right: 18px;
     height: 45px;
+    width: 180px;
     border: 1px solid white;
     border-radius: 5px;
     text-align: center;
@@ -104,35 +105,27 @@ button i {
     height: 18px;
 }
   
-  button:hover{
-      background-color: #03141a;
-      opacity: 100%;
-  }
-  
-  button:focus{
-      background-color: #03141a;
-      opacity: 100%;
-  }
+button:hover{
+    background-color: #03141a;
+    opacity: 100%;
+}
+
+button:focus{
+    background-color: #03141a;
+    opacity: 100%;
+}
 
 body { 
     margin: 0%;
 }
 
-section {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 60px;
-}
-
 hr {
-    margin-top: 80px;
-    opacity: 50%;
-    width: auto;
-    margin-left: 40px;
-    margin-right: 40px;
+  margin-bottom: 40px;
+  opacity: 50%;
+  width: auto;
+  margin-left: 40px;
+  margin-right: 40px;
 }
-
-
 /* Banner inicial */
 
 main {
@@ -154,160 +147,450 @@ main .banner {
 main .banner .imgBanner img {
   width: 100vw;
   height: 100vh; 
+  object-fit: cover;
+}
+
+.container {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 /* Sobre nós */
 
 .sectionAbout { 
-    padding-top: 0px;
-    max-height: 55vh;
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
+  max-height: 55vh;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 60px;
 }
 
 .imgAbout {
-    width: 50%;
+  width: 50%;
+}
+
+.imgAbout img{
+  object-fit: cover;
 }
 
 .aboutInfBut {
-display: flex;
-flex-direction: column;
-align-items: end;
-padding:0;
-margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding:0;
+  margin-left: 3%;
+  margin-bottom: 0;
+}
+
+.aboutInfBut .button {
+  margin-top: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  bottom: 0;
+  position: relative;
+
 }
 
 .aboutInfBut a {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .aboutInf {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Filmes*/
 
 .sectionMovie {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 30px;
 }
 
 .divTitbut{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .moviesLine {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
   }
 
 .movieCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 30px;
+  padding-top: 15px;
 }
 
-.movieImg {
-    width: 196px;
+.movieImg img{
+  max-width: 196px;
 }
 
 .movieInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  gap: 5px;
 }
 
 .movieCard:hover {
-    transition: 0.3s;
-    cursor: pointer;
-    transform: scale(1.2);
-    background-color: transparent;
-    z-index: 2;
+  transition: 0.3s;
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: transparent;
+  z-index: 2;
+}
+
+.divTitbut .button {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: end;
 }
 
 /* Loja*/
 
 .sectionShop {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  max-height: 55vh;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 60px;
 }
 
 .imgShop {
-    width: 50%;
+  width: 50%;
+}
+
+.imgShop img{
+  width: 50%;
+  object-fit: cover;
 }
 
 .shopInfBut {
-display: flex;
-flex-direction: column;
-align-items: start;
-padding:0;
-margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding:0;
+  margin-right: 3%;
 }
 
 .shopInfBut a {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .shopInf {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
+.shopInfBut .button {
+  margin-top: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  bottom: 0;
+  position: relative;
+}
 
 /* Trilha*/
 
 .sectionMusic {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 60px;
 }
 
 .musicTitbut{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .musicsLine {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  margin-top: 20px;
   }
 
 .musicCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 20px;
+  padding-top: 15px;
 }
 
 .musicCard:hover {
-    transition: 0.3s;
-    cursor: pointer;
-    transform: scale(1.2);
-    background-color: transparent;
-    z-index: 2;
+  transition: 0.3s;
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: transparent;
+  z-index: 2;
 }
 
 .musicImg {
-    width: 196px;
+  width: 196px;
 }
 
 .musicInfo {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .sectionAbout {
+    display: block;
     align-items: center;
-    gap: 5px;
+    margin-left: 15px;
+    margin-right: 15px; 
+    max-height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .imgAbout {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutInfBut {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 0%;
+    max-height: 100%;
+    width: auto;
+  }
+
+  .aboutInf h1{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .aboutInf p{
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .aboutInfBut .button {
+    margin-top: 25px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+  .sectionMovie {
+    display: block;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .divTitbut{
+    display: block;
+  }
+
+  .divTitbut h1 {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .divTitbut .button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .moviesLine {
+    display: block;
+  }
+
+  .movieImg {
+    margin-top: 20px;
+  }
+
+  .movieInfo {
+      gap: 10px;
+      margin-bottom: 20px;
+  }
+
+  .sectionMovie a {
+      align-items: center;
+
+  }
+
+  .sectionShop {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0px;
+    max-height: 100%;
+  }
+
+  .shopInfBut {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 0%;
+    width: auto;
+  }
+
+  .shopInf h1 {
+    margin-top: 20px;
+    text-align: center;
+  } 
+
+  .shopInfBut .button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .imgShop {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .sectionMusic {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0px;
+    max-height: 100%;
+  }
+
+  .musicsLine {
+    display: block;
+  }
+
+  .musicCard {
+    margin-top: 25px;
+    gap: 0px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .sectionAbout {
+    display: block;
+    align-items: center;
+    margin-bottom: 40px;
+    max-height: 100%;
+  }
+
+  .imgAbout {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutInfBut {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 0%;
+    max-height: 100%;
+    width: auto;
+  }
+
+  .aboutInf h1{
+    margin-top: 20px;
+  }
+
+  .aboutInfBut .button {
+    margin-top: 25px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .sectionMovie {
+    margin-bottom: 30px;
+  }
+
+  .sectionShop {
+    display: block;
+    align-items: center;
+    margin-bottom: 40px;
+    max-height: 100%;
+  }
+
+  .shopInfBut {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 0%;
+    width: auto;
+  }
+
+  .shopInfBut .button {
+    margin-top: 25px;
+    justify-content: end;
+  }
+
+  .imgShop {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sectionMusic {
+    margin-bottom: 40px;
+  }
 }
