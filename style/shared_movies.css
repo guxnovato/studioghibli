@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald';
+  background-color: #FEF9FD;
+}
+
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin-bottom: 40px;
+  opacity: 50%;
+  width: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+button {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-style: bold;
+  background-color: rgb(3, 20, 26, 0.8);
+  border-radius: 100px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding-left: 24px;
+  padding-right: 18px;
+  height: 45px;
+  width: 180px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button i {
+  padding-left: 10px;
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+}
+
+button:hover{
+  background-color: #03141a;
+  opacity: 100%;
+}
+
+button:focus{
+  background-color: #03141a;
+  opacity: 100%;
+}
+
+main .banner {
+  width: 100vw;
+  height: 60vh; 
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+main .banner .imgBanner img {
+  width: 100vw;
+  height: 100vh; 
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+main .banner .imgBanner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom left, rgba(255,0,0,0), black);
+  opacity: 100%;
+}
+
+main .text {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color: white;
+  text-align: left;
+  z-index: 2;
+  background-color: transparent;
+}
+
+main .text h1 {
+  font-weight: 700; 
+  margin: 0;
+  font-size: 48px;
+  color: white;
+  background-color: transparent;
+}
+
+.galleryBanner {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.gallery {
+  width: calc(300px *  6 + 40px * 1); /* Ajustado para 3 imagens com espaço entre elas */
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery .slides {
+  display: flex;
+  gap: 20px; /* Espaço de 20px entre as imagens */
+  animation: carrousel 15s linear infinite; /* Diminui a duração da animação para 15 segundos */
+}
+
+.gallery .slide {
+  flex: 0 0 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* Ajusta o tamanho da imagem sem distorcer */
+  background-color: transparent; /* Sem fundo */
+  border: none; /* Remove qualquer borda */
+}
+
+@keyframes carrousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-960px); /* Move pela largura total das 3 imagens + espaços */
+  }
+}
+
+.container {
+  width: 100vw;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: block;
+}
+
+.sectionSinopse {
+  margin-bottom: 60px;
+}
+
+.sectionSinopse .sinopseInfFrame{
+  display: flex;
+  align-content: space-between;
+  gap: 2%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.sectionSinopse .sinopseInfFrame .frameSinopse {
+  width: 50vw;
+  height: 50vh;
+}
+
+.sectionSinopse .sinopseInfFrame .frameSinopse  iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sectionSinopse .sinopseInfFrame .sinopseInf {
+  width: 50vw;
+}
+
+.sectionSinopse .sinopseInfFrame .sinopseInf h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
+  top: 0;
+  margin-bottom: 30px;
+  color: black;
+  opacity: 80%;
+  font-size: 40px;
+}
+
+.sectionSinopse .sinopseInfFrame .sinopseInf p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #03141A;
+  opacity: 50%;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  text-align: justify; 
+}
+
+.sectionData {
+  display: block;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.sectionData .dadosTitBut {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.sectionData .dadosTitBut h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
+  top: 0;
+  margin-bottom: 30px;
+  color: black;
+  opacity: 80%;
+  font-size: 40px;
+}
+
+.sectionData .dadosTitBut .button {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: end;
+}
+
+.sectionData .dataLine {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.sectionData .dataLine .dataCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.sectionData .dataLine .dataCard h4{
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #03141a;
+  opacity: 80%;
+  margin: 0;
+}
+
+.sectionData .dataLine .dataCard p{
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 50%;
+  color: #03141a;
+  margin: 0;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  main .banner .text {
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 100%;
+    left: 0%;
+  }
+
+  main .banner .text h1 {
+    text-align: center;
+  }
+
+  .galleryBanner {
+    width: 100vw;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .container {
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  hr {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+  }
+
+  .sectionSinopse {
+    margin-bottom: 20px;
+  }
+
+  .sectionSinopse .sinopseInfFrame{
+    display: block;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px; 
+  }
+
+  .sectionSinopse .sinopseInfFrame .frameSinopse {
+    width: 100%;
+  }
+  
+  .sectionSinopse .sinopseInfFrame .frameSinopse  iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sectionSinopse .sinopseInfFrame .sinopseInf {
+    width: 100%;
+  }
+
+  .sectionSinopse .sinopseInfFrame .sinopseInf h2{
+    text-align: center;
+  }
+
+  .sectionData {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .sectionData .dadosTitBut {
+    display: block;
+    align-items: center;
+  }
+
+  .sectionData .dadosTitBut h2{
+    text-align: center;
+  }
+
+  .sectionData .dadosTitBut .button {
+    margin-top: 25px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .sectionData .dataLine {
+    display: block;
+  }
+  
+  .sectionData .dataLine .dataCard h4{
+   margin-top: 10px;
+  }
+}

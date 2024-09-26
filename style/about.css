@@ -121,7 +121,7 @@ hr {
 }
 
 .container #origin .resumeText p{
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 20px;
   color: #03141A;
   opacity: 50%;
@@ -436,5 +436,4 @@ hr {
     margin-bottom: 40px;
     width: auto;
   }
-
 }
