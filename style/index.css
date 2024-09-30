@@ -180,7 +180,7 @@ main .banner .imgBanner img {
   flex-direction: column;
   align-items: end;
   padding:0;
-  margin-left: 3%;
+  margin-left: 2%;
   margin-bottom: 0;
 }
 
@@ -221,24 +221,21 @@ main .banner .imgBanner img {
 }
 
 .moviesLine {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: left;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  align-items: center;
+}
 
 .movieCard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 28px;
-  padding-right: 28px;
   padding-bottom: 30px;
   padding-top: 15px;
 }
 
 .movieImg img{
-  max-width: 196px;
+  max-width: 300px;
 }
 
 .movieInfo {
@@ -289,7 +286,7 @@ main .banner .imgBanner img {
   flex-direction: column;
   align-items: start;
   padding:0;
-  margin-right: 3%;
+  margin-right: 2%;
 }
 
 .shopInfBut a {
@@ -303,7 +300,7 @@ main .banner .imgBanner img {
 }
 
 .shopInfBut .button {
-  margin-top: 30%;
+  margin-top: 35%;
   display: flex;
   justify-content: end;
   align-items: end;
@@ -328,18 +325,15 @@ main .banner .imgBanner img {
 }
 
 .musicsLine {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: left;
-  margin-top: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  align-items: center;
+}
 
 .musicCard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 28px;
-  padding-right: 28px;
   padding-bottom: 20px;
   padding-top: 15px;
 }
