@@ -1,7 +1,161 @@
-* {
+	
+footer *{
+	background: #03141A;
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  width: 100%;
+  min-height: 250px;
+}
+
+.boxs {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .box {
+  padding: 40px;
+  width: 420px;
+}
+
+.box .logo {
+  opacity: 90%;
+  color:#fbfdfe;
+  padding-bottom: 20px;
+  width: 80px;
+}
+
+footer .box:nth-child(4) {
+	width: 400px;
+}
+
+.box p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 40%;
+  margin: 0;
+}
+
+.box h4 {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+  color: #fbfdfe;
+  opacity: 40%;
+  margin-bottom: 10px;
+}
+
+.box ul li {
+	margin: 5px 0px;
+	list-style: none;
+}
+
+.box ul li a {
+	text-decoration: none;
+    font-family: 'Oswald';
+    text-decoration: none;
+    font-size: 16px;
+    font-style: bold;
+    color:#fbfdfe;
+    opacity: 80%;
+    text-transform: uppercase;
+}
+
+.box ul li a:hover {
+    opacity: 100%;
+    transform: scale (1.5);
+}
+
+.box p {
+	color: #fbfdfe;
+	text-align: justify;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #03141A;
+    padding: 0px 40px 40px 40px;
+}
+
+.footer p {
+    color:#fbfdfe;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 40%;
     margin: 0;
-    background-color: #03141A;
-    color: white;
-    padding: 40px;
-  }
-  
+}
+
+.footer .social {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.social i {
+    font-family: boxicons !important;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    opacity: 80%;
+    scale: 1.3;
+}
+
+.social i:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+hr {
+    opacity: 20%;
+    margin: 0px 40px 10px 40px;
+}
+
+/* media query */
+
+@media (max-width: 768px) {
+
+	footer .boxs{
+	    flex-direction: column;
+	}
+
+	footer .box {
+		width: 100%;
+		text-align: center;
+	}
+	
+	footer .box:nth-child(4) {
+		width: 100%;
+	}
+
+    p {
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
