@@ -222,7 +222,7 @@ main .banner .imgBanner img {
 
 .moviesLine {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   align-items: center;
 }
 
@@ -326,7 +326,7 @@ main .banner .imgBanner img {
 
 .musicsLine {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   align-items: center;
 }
 
